@@ -31,7 +31,7 @@ adminForm.addEventListener('submit',function(e){
             let admin_serialized=JSON.stringify(admin);
             localStorage.setItem("admin",admin_serialized);
             registerBtn.style.display="none"
-            window.location = "login.html"
+            window.location = "index.html"
         }
         
     }else{
