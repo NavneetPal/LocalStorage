@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="css/user.css">
+</head>
+<body>
+    <header>
+        <h2 id="adminName">Hello, [Name]</h2>
+        <div class="dashboard">
+            <ul>
+                <hr>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <hr>
+                <li><a href="user.html">Users</a></li>
+                <hr>
+                <li><a href="usersession.html">Login Session</a></li>
+                <hr>
+                <li><a href="login.html">Logout</a></li>
+                <hr>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h2>Add User</h2>
+        <section class="form">
+            <form action="#" id="userForm">
+                <div id="input">
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                    <input type="text" name="birthdate" id="birthdate" placeholder="Birthdate(mm-dd-yyyy)" required>
+                </div>
+                <div class="right">
+                    <button type="submit" id="btn1">Add User</button>
+                </div>
+            </form>
+            <div class="right">
+                <button id="btn2" >Update User</button>
+            </div>
+        </section> 
+       
+        <section class="table">
+            <h2>User List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Birthdate</th>
+                        <th>Age</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </section>
+       
+    </main>
+
+    <script src="js/user.js"></script>
+</body>
+</html>
